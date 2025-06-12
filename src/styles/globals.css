@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Ubuntu Light';
+  src: url('/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Italic Light';
+  src: url('/fonts/Ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Italic';
+  src: url('/fonts/Ubuntu/Ubuntu-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu Medium';
+  src: url('/fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Medium Italic';
+  src: url('/fonts/Ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold Italic';
+  src: url('/fonts/Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@theme {
+  --font-ubuntu-light: "Ubuntu Light", sans-serif;
+  --font-ubuntu-italic-light: "Ubuntu Italic Light", sans-serif;
+  --font-ubuntu-regular: "Ubuntu Regular", sans-serif;
+  --font-ubuntu-italic: "Ubuntu Italic", sans-serif;
+  --font-ubuntu-medium: "Ubuntu Medium", sans-serif;
+  --font-ubuntu-medium-italic: "Ubuntu Medium Italic", sans-serif;
+  --font-ubuntu-bold: "Ubuntu Bold", sans-serif;
+  --font-ubuntu-bold-italic: "Ubuntu Bold Italic", sans-serif;
+
+  --color-primary-brown: #ccb593;
+  --color-secondary-brown: #d0b494;
+
+  --color-subtext-black: #828282;
+
+  --color-background-white: #f7f7f7;
+  --color-background-black: #1e1e1e;
+}
+
+:root {
+  --font-sans: 'Ubuntu', system-ui, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1.125rem);
+}
+
+/*Font Size 60*/
+h1 {
+  font-family: var(--font-ubuntu-bold), sans-serif;
+  font-size: clamp(3rem, 2rem + 2vw, 3.75rem);
+  color: var(--color-primary-brown);
+}
+
+/*Font Size 48*/
+h2 {
+  font-family: var(--font-ubuntu-medium), sans-serif;
+  font-size: clamp(2.25rem, 1.5rem + 2vw, 3rem);
+  color: var(--color-primary-brown);
+}
+
+/*Font Size 30*/
+h3 {
+  font-family: var(--font-ubuntu-regular), sans-serif;
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 1.875rem);
+}
+
+/*Font Size 24*/
+h4 {
+  font-family: var(--font-ubuntu-regular), sans-serif;
+  font-size: clamp(1.25rem, 0.875rem + 1vw, 1.5rem);
+}
+
+.responsive-body {
+  /* 3 cols: empty_content_empty */
+  @apply grid grid-cols-[auto_clamp(300px,80%,1100px)_auto];
+
+  & > * {
+    /* Constrain children of main to middle column */
+    @apply col-start-2 col-end-3;
+  }
+}
+
+.responsive-fullwidth {
+  /* Escape hatch to allow full-width 'breaking out' of the responsive-body grid layout */
+  @apply col-start-1 col-end-4;
+}
