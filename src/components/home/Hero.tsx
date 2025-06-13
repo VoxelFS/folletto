@@ -24,7 +24,7 @@ export default function Hero() {
                 </div>
 
                 <div
-                    className="absolute bottom-0 left-0 right-0 justify-center text-center z-20 translate-y-55 sm:translate-y-55">
+                    className="responsive-body absolute bottom-0 left-0 right-0 justify-center text-center z-20 translate-y-75 sm:translate-y-55">
                     <h2 className="leading-tight m-0">
                         Join the Folletto Caffè
                     </h2>
