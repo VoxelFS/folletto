@@ -1,3 +1,5 @@
+import Title from "@/components/ui/Title";
+
 export default function FollettoFeatures() {
 
     const info = [
@@ -22,11 +24,7 @@ export default function FollettoFeatures() {
     return (
         <div className="flex flex-col items-center">
             <h5 className="font-shining-star text-2xl">A menu that makes it special and premium.</h5>
-            <div className="flex-col flex items-center gap-y-3 mb-7">
-                <h3 className="text-primary-brown">Premium Unmanned Beverage</h3>
-
-                <div className="w-32 h-1 bg-primary-brown "></div>
-            </div>
+            <Title title="Premium Unmanned Beverage" className="mb-7" />
             <div className="flex justify-between gap-10 flex-wrap mx-auto justify-center">
                 {info.map((item, i) => (
                     <div className="flex flex-col px-6 py-12 text-center w-[250px] md:w-[300px] h-[200px] md:h-[250px] bg-background-white" key={i}>
