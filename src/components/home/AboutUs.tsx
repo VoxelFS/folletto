@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function AboutUs() {
     return (
         <div>
-            <div className="absolute right-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px]">
+            <div className="absolute right-0 w-[250px] h-[250px] md:w-[350px] md:h-[350px]">
                 <Image
                     src="/images/hero/coffee.png"
                     alt="Coffee Beans"
@@ -13,15 +15,18 @@ export default function AboutUs() {
                 />
             </div>
 
-            <div className="pt-[200px] sm:pt-[300px] flex flex-col sm:flex-row-reverse gap-x-10 gap-y-6">
-                <div className="sm:w-1/2 py-2">
+            <div className="pt-[200px] sm:pt-[300px] flex flex-col md:flex-row-reverse gap-x-10 gap-y-6">
+                <div className="md:w-1/2 py-2">
                     <h3 className="text-secondary-brown">About Us</h3>
-                    <p>
+                    <p className="mt-5">
                         At Folletto Caffè, we offer cutting-edge beverage automation robots at competitive prices,
                         delivering superior taste and lightning-fast beverage preparation.
                         Our robots redefine beverage service standards, surpassing traditional robotic baristas to
                         create an unparalleled coffee experience customers will crave again and again.
                     </p>
+                    <Button className="mt-5 text-primary-brown">
+                        More
+                    </Button>
                 </div>
 
                 <Image
@@ -29,14 +34,14 @@ export default function AboutUs() {
                     alt="coffee about"
                     width={600}
                     height={400}
-                    className="sm:w-1/2 w-full h-auto"
+                    className="md:w-1/2 w-full h-auto"
                 />
             </div>
 
-            <div className="pt-20 flex flex-col sm:flex-row gap-x-10 gap-y-6">
-                <div className="sm:w-1/2 py-2">
+            <div className="pt-20 flex flex-col md:flex-row gap-x-10 gap-y-6">
+                <div className="md:w-1/2 py-2">
                     <h3 className="text-secondary-brown">Our Distributors Worldwide</h3>
-                    <p>
+                    <p className="mt-5">
                         Exported to 33 countries worldwide, including Dubai, Japan, Spain, Taiwan, Thailand, Russia,
                         Indonesia, Saudi Arabia, Iraq, Qatar, China, Kenya, Myanmar, Germany, Italy, Singapore,
                         and the United States.
@@ -49,6 +54,12 @@ export default function AboutUs() {
 
                         <br/>Find us at the following.
                     </p>
+
+                    <Button className="mt-5 text-primary-brown">
+                        <Link href="/locations">
+                            See Locations
+                        </Link>
+                    </Button>
                 </div>
 
                 <Image
@@ -56,7 +67,7 @@ export default function AboutUs() {
                     alt="folletto group"
                     width={600}
                     height={400}
-                    className="sm:w-1/2 w-full h-auto"
+                    className="md:w-1/2 w-full h-auto"
                 />
             </div>
         </div>
