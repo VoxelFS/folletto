@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "Shining Star";
+  src: url("/fonts/Cafe24Shiningstar.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Ubuntu Light';
   src: url('/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
   font-weight: 300;
@@ -65,6 +72,8 @@
   --font-ubuntu-medium-italic: "Ubuntu Medium Italic", sans-serif;
   --font-ubuntu-bold: "Ubuntu Bold", sans-serif;
   --font-ubuntu-bold-italic: "Ubuntu Bold Italic", sans-serif;
+
+  --font-shining-star: "Shining Star", sans-serif;
 
   --color-primary-brown: #ccb593;
   --color-secondary-brown: #d0b494;
