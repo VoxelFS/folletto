@@ -16,7 +16,7 @@ export default function Home() {
           <div className="responsive-fullwidth my-32">
               <FollettoFeatures />
           </div>
-          <div className="responsive-fullwidth mb-32">
+          <div className="responsive-fullwidth mb-32 mx-auto">
               <Menu />
           </div>
       </StandardLayout>

@@ -8,24 +8,27 @@ interface ViewDrinksProps {
 }
 
 export default function ViewDrinks({ drinks, category }: ViewDrinksProps) {
-    const filteredDrinks = filterDrink(category, drinks);
+    const filteredDrinks = filterDrink(category, drinks).slice(0, 4);
 
     return (
-        <div className="flex flex-row max-w-1/3 overflow-x-scroll">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {filteredDrinks.map((drink, index) => (
                 <div
                     className="flex flex-col bg-white rounded-2xl items-center py-6"
                     key={index}
                 >
-                    <Image
-                        src={drink.DrinkPhoto.url}
-                        alt={drink.DrinkPhoto.alt}
-                        height={350}
-                        width={250}
-                    />
-                    <p>{drink.drink}</p>
+                    <div className="w-[250px] h-[200px] sm:w-[300px] sm:h-[250px] relative">
+                        <Image
+                            src={drink.DrinkPhoto.url}
+                            alt={drink.DrinkPhoto.alt}
+                            fill
+                            className="object-cover rounded-xl"
+                        />
+                    </div>
+                    <p className="font-medium mt-4">{drink.drink}</p>
                 </div>
             ))}
         </div>
+
     );
 }

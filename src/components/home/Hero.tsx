@@ -3,17 +3,16 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <div className="responsive-fullwidth pb-10">
-            <div className="relative w-full h-[500px] sm:h-[600px] md:h-[720px]">
+            <div className="relative w-full h-[400px] sm:h-[600px] md:h-[720px]">
                 <Image
                     src="/images/hero/hero_main.png"
                     alt="Hero Image"
                     fill
-                    className="object-cover"
                     priority
                 />
 
                 <div
-                    className="absolute bottom-0 left-0 right-0 flex justify-center translate-y-30 z-10">
+                    className="absolute bottom-0 left-0 right-0 flex justify-center translate-y-30 z-10 ">
                     <Image
                         src="/images/hero/hero_machine.png"
                         alt="Hero Machine"
