@@ -17,7 +17,7 @@ export default function ViewDrinks({ drinks, category }: ViewDrinksProps) {
                     className="flex flex-col bg-white rounded-2xl items-center py-6"
                     key={index}
                 >
-                    <div className="w-[250px] h-[200px] sm:w-[300px] sm:h-[250px] relative">
+                    <div className="w-[clamp(200px,30vw,300px)] aspect-[4/3] relative">
                         <Image
                             src={drink.DrinkPhoto.url}
                             alt={drink.DrinkPhoto.alt}

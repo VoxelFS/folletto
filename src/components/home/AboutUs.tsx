@@ -5,13 +5,12 @@ import Link from "next/link";
 export default function AboutUs() {
     return (
         <div>
-            <div className="absolute right-0 w-[250px] h-[250px] md:w-[350px] md:h-[350px]">
+            <div className="absolute right-0 w-[clamp(250px,30vw,350px)] h-[clamp(250px,30vw,350px)]">
                 <Image
                     src="/images/hero/coffee.png"
                     alt="Coffee Beans"
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-contain"
+                    fill
+                    className="object-contain"
                 />
             </div>
 
@@ -34,7 +33,7 @@ export default function AboutUs() {
                     alt="coffee about"
                     width={600}
                     height={400}
-                    className="md:w-1/2 w-full h-auto"
+                    className="md:w-1/2 w-auto h-auto"
                 />
             </div>
 
