@@ -3,6 +3,7 @@ import StandardLayout from "@/components/layouts/StandardLayout";
 import InfoBanner from "@/components/home/InfoBanner";
 import AboutUs from "@/components/home/AboutUs";
 import FollettoFeatures from "@/components/home/FollettoFeatures";
+import Menu from "@/components/home/Menu";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
           <AboutUs />
           <div className="responsive-fullwidth my-32">
               <FollettoFeatures />
+          </div>
+          <div className="responsive-fullwidth mb-32">
+              <Menu />
           </div>
       </StandardLayout>
 );
