@@ -4,8 +4,8 @@ import InfoBanner from "@/components/home/InfoBanner";
 import AboutUs from "@/components/home/AboutUs";
 import FollettoFeatures from "@/components/home/FollettoFeatures";
 import Menu from "@/components/home/Menu";
-import Franchisee from "@/components/home/Franchisee";
 import Contact from "@/components/home/Contact";
+import Banner from "@/components/ui/Banner";
 
 export default function Home() {
   return (
@@ -26,7 +26,16 @@ export default function Home() {
           </section>
 
           <section className="responsive-fullwidth mb-20">
-              <Franchisee />
+              <Banner
+                  title={"LOOKING TO BECOME A FRANCHISEE?"}
+                  description={"Join a revolutionary shift in cafe services. Explore the possibilities of owning your own robotic cafe," +
+                      " where innovation and automation translate into high returns on investment and unparalleled profits" +
+                      " that many businesses aspire to achieve."}
+                  link={"Get Folletto"}
+                  href={"/franchise"}
+                  img={"/images/hero/coffee_mug.png"}
+                  alt={"coffee mug"}
+              />
           </section>
 
           <section className="mb-20">
