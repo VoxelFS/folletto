@@ -31,7 +31,7 @@ export default function FourSteps() {
             <div className="flex flex-col justify-center text-center items-center gap-y-7">
                 <Title title="Four Steps to a Great Cup of Coffee"/>
                 <p className="max-w-1/2">
-                    In today's fast-paced world, the robotic coffee maker meets customers' priorities:
+                    In today&apos;s fast-paced world, the robotic coffee maker meets customers&apos; priorities:
                     <br/>
                     <b>speed, efficiency and maintaining personal space.</b>
                 </p>

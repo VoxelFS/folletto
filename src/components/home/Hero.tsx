@@ -31,7 +31,7 @@ export default function Hero() {
                         Join into the Future of Coffee
                     </h2>
                     <p className="md:w-[50%] mx-auto text-center">
-                        Folletto Caffè proudly stands as the world's fully automated multiproduct robot cafe offering a
+                        Folletto Caffè proudly stands as the world&apos;s fully automated multiproduct robot cafe offering a
                         diverse range of drinks
                     </p>
                 </div>
