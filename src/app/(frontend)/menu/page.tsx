@@ -10,7 +10,7 @@ export default function Page() {
                 <Header title="Menu" image="/images/menu/menu_main.png" alt="menu main"/>
             </section>
 
-            <section className="mt-24">
+            <section className="responsive-fullwidth mt-24">
                 <MainMenu />
             </section>
 

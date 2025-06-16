@@ -14,7 +14,7 @@ export default function ViewDrinks({ drinks, category }: ViewDrinksProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {filteredDrinks.map((drink, index) => (
                 <div
-                    className="flex flex-col bg-white rounded-2xl items-center py-6"
+                    className="flex flex-col bg-white rounded-xl items-center py-6"
                     key={index}
                 >
                     <div className="w-[clamp(200px,30vw,300px)] aspect-[4/3] relative">
