@@ -94,7 +94,7 @@
 
 /*Font Size 60*/
 h1 {
-  font-family: var(--font-ubuntu-bold), sans-serif;
+  font-family: var(--font-ubuntu-regular), sans-serif;
   font-size: clamp(3rem, 2rem + 2vw, 3.75rem);
   color: var(--color-primary-brown);
 }
