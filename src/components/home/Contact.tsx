@@ -8,9 +8,8 @@ export default function Contact() {
             <Title title={"Write Us a Message"} />
             <p className="text-center">
                 Have any questions? Get in contact with us using the link below!
-                <p>
-                    Our team will be in touch with you within 48-hours.
-                </p>
+                <br/>
+                Our team will be in touch with you within 48-hours.
             </p>
             <Button className="text-primary-brown">
                 <Link href="/contact">

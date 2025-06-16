@@ -11,27 +11,27 @@ export default function Home() {
   return (
       <StandardLayout>
           <Hero/>
-          <div className="responsive-fullwidth mt-75 sm:mt-55 bg-background-black py-10 px-22">
+          <section className="responsive-fullwidth mt-75 sm:mt-55 bg-background-black py-10 px-22">
               <InfoBanner/>
-          </div>
+          </section>
 
           <AboutUs />
 
-          <div className="responsive-fullwidth my-32">
+          <section className="responsive-fullwidth my-32">
               <FollettoFeatures />
-          </div>
+          </section>
 
-          <div className="responsive-fullwidth mb-48 mx-auto">
+          <section className="responsive-fullwidth mb-48 mx-auto">
               <Menu />
-          </div>
+          </section>
 
-          <div className="responsive-fullwidth mb-20">
+          <section className="responsive-fullwidth mb-20">
               <Franchisee />
-          </div>
+          </section>
 
-          <div className="mb-20">
+          <section className="mb-20">
               <Contact />
-          </div>
+          </section>
       </StandardLayout>
 );
 }
