@@ -6,7 +6,8 @@ export default function AboutHeader() {
             <Image
                 src="/images/about/aboutus_main.png"
                 alt="About us main"
-                fill
+                height={1247}
+                width={2768}
                 className="object-cover"
             />
 

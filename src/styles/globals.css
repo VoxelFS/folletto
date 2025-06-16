@@ -118,6 +118,11 @@ h4 {
   font-size: clamp(1.25rem, 0.875rem + 1vw, 1.5rem);
 }
 
+h5 {
+  font-family: var(--font-ubuntu-regular), sans-serif;
+  font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem);
+}
+
 .responsive-body {
   /* 3 cols: empty_content_empty */
   @apply grid grid-cols-[auto_clamp(300px,80%,1100px)_auto];
