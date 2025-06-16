@@ -43,8 +43,8 @@ export default function AboutAdvantages() {
                         <Image
                             src={item.image}
                             alt={item.title}
-                            width={600}
-                            height={400}
+                            width={1200}
+                            height={800}
                             className="md:w-1/2 w-auto h-auto"
                         />
                         <div
