@@ -1,15 +1,15 @@
 import StandardLayout from "@/components/layouts/StandardLayout";
-import AboutHeader from "@/app/(frontend)/about/_components/AboutHeader";
 import AboutDescription from "@/app/(frontend)/about/_components/AboutDescription";
 import FourSteps from "@/app/(frontend)/about/_components/FourSteps";
 import AboutAdvantages from "@/app/(frontend)/about/_components/AboutAdvantages";
 import Banner from "@/components/ui/Banner";
+import Header from "@/components/ui/Header";
 
 export default function Page() {
     return (
         <StandardLayout>
             <section className="responsive-fullwidth">
-                <AboutHeader/>
+                <Header title="About Us" image="/images/about/aboutus_main.png" alt="About us main" />
             </section>
 
             <section className="mt-12">

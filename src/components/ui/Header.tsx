@@ -1,13 +1,19 @@
 import Image from "next/image";
 
-export default function AboutHeader() {
+interface HeaderProps {
+    title: string;
+    image: string;
+    alt: string;
+}
+
+export default function Header({ title, image, alt }: HeaderProps) {
     return (
-        <div className="relative w-full aspect-[12/9] md:aspect-[21/9]">
+        <div className="relative w-full aspect-[12/9] md:aspect-auto">
             {/* Mobile version: uses fill */}
             <div className="relative w-full aspect-[12/9] md:hidden">
                 <Image
-                    src="/images/about/aboutus_main.png"
-                    alt="About us main"
+                    src={image}
+                    alt={alt}
                     fill
                     className="object-cover"
                 />
@@ -16,8 +22,8 @@ export default function AboutHeader() {
             {/* Desktop version: uses fixed height & width */}
             <div className="hidden md:block">
                 <Image
-                    src="/images/about/aboutus_main.png"
-                    alt="About us main"
+                    src={image}
+                    alt={alt}
                     height={1247}
                     width={2768}
                     className="object-cover"
@@ -26,7 +32,7 @@ export default function AboutHeader() {
 
 
             <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="translate-y-10">About Us</h1>
+                <h1 className="translate-y-10">{title}</h1>
             </div>
         </div>
     );
