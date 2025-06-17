@@ -11,7 +11,7 @@ export default function Home() {
   return (
       <StandardLayout>
           <Hero/>
-          <section className="responsive-fullwidth mt-75 sm:mt-55 bg-background-black py-10 px-22">
+          <section className="responsive-fullwidth mt-20 bg-background-black py-10 px-22">
               <InfoBanner/>
           </section>
 
