@@ -6,10 +6,9 @@ import {motion, useScroll, useTransform} from "framer-motion";
 interface HeaderProps {
     title: string;
     image: string;
-    alt: string;
 }
 
-export default function Header({ title, image, alt }: HeaderProps) {
+export default function Header({ title, image }: HeaderProps) {
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({

@@ -8,7 +8,7 @@ import Header from "@/components/ui/Header";
 export default function Page() {
     return (
         <StandardLayout>
-            <Header title="About Us" image="/images/about/aboutus_main.png" alt="About us main" />
+            <Header title="About Us" image="/images/about/aboutus_main.png" />
 
             <section className="mt-12">
                 <AboutDescription/>

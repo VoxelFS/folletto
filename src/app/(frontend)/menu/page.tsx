@@ -6,7 +6,7 @@ import MainMenu from "@/app/(frontend)/menu/_components/MainMenu";
 export default function Page() {
     return (
         <StandardLayout>
-            <Header title="Menu" image="/images/menu/menu_main.png" alt="menu main"/>
+            <Header title="Menu" image="/images/menu/menu_main.png" />
 
             <section className="responsive-fullwidth mt-24">
                 <MainMenu />

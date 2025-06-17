@@ -7,7 +7,7 @@ import LocationsDisplay from "@/app/(frontend)/location/_components/LocationsDis
 export default function Page() {
     return (
         <StandardLayout>
-            <Header title="Location" image="/images/location/Location_main.png" alt="Location Main"/>
+            <Header title="Location" image="/images/location/Location_main.png" />
             <section className="my-24">
                 <Title title="Folletto Caffè Branches"/>
                 <LocationsDisplay />
