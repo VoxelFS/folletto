@@ -55,7 +55,7 @@ export default function AboutUs() {
                     </p>
 
                     <Button className="mt-5 text-primary-brown">
-                        <Link href="/locations">
+                        <Link href="/location">
                             See Locations
                         </Link>
                     </Button>
