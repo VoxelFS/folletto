@@ -8,9 +8,7 @@ import Header from "@/components/ui/Header";
 export default function Page() {
     return (
         <StandardLayout>
-            <section className="responsive-fullwidth">
-                <Header title="About Us" image="/images/about/aboutus_main.png" alt="About us main" />
-            </section>
+            <Header title="About Us" image="/images/about/aboutus_main.png" alt="About us main" />
 
             <section className="mt-12">
                 <AboutDescription/>

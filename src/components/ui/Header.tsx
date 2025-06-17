@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export default function Header({ title, image, alt }: HeaderProps) {
     return (
-        <div className="relative w-full aspect-[12/9] md:aspect-auto">
+        <div className="responsive-fullwidth relative w-full aspect-[12/9] md:aspect-auto">
             {/* Mobile version: uses fill */}
             <div className="relative w-full aspect-[12/9] md:hidden">
                 <Image

@@ -119,7 +119,6 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-ubuntu-regular), sans-serif;
   font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem);
 }
 

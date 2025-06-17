@@ -1,10 +1,10 @@
-import Hero from "@/components/home/Hero";
+import Hero from "@/app/(frontend)/(home)/_components/Hero";
 import StandardLayout from "@/components/layouts/StandardLayout";
-import InfoBanner from "@/components/home/InfoBanner";
-import AboutUs from "@/components/home/AboutUs";
-import FollettoFeatures from "@/components/home/FollettoFeatures";
-import Menu from "@/components/home/Menu";
-import Contact from "@/components/home/Contact";
+import InfoBanner from "@/app/(frontend)/(home)/_components/InfoBanner";
+import AboutUs from "@/app/(frontend)/(home)/_components/AboutUs";
+import FollettoFeatures from "@/app/(frontend)/(home)/_components/FollettoFeatures";
+import Menu from "@/app/(frontend)/(home)/_components/Menu";
+import Contact from "@/app/(frontend)/(home)/_components/Contact";
 import Banner from "@/components/ui/Banner";
 
 export default function Home() {

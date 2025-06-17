@@ -1,17 +1,16 @@
 import StandardLayout from "@/components/layouts/StandardLayout";
 import Header from "@/components/ui/Header";
+import Title from "@/components/ui/Title";
 import Banner from "@/components/ui/Banner";
-import MainMenu from "@/app/(frontend)/menu/_components/MainMenu";
 
 export default function Page() {
     return (
         <StandardLayout>
-            <Header title="Menu" image="/images/menu/menu_main.png" alt="menu main"/>
+            <Header title="Location" image="/images/location/Location_main.png" alt="Location Main"/>
+            <section className="my-24">
+                <Title title="Folletto Caffè Branches"/>
 
-            <section className="responsive-fullwidth mt-24">
-                <MainMenu />
             </section>
-
             <section className="responsive-fullwidth mt-48 mb-12">
                 <Banner
                     title={"GET FOLLETTO NOW!"}

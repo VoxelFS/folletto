@@ -3,7 +3,7 @@
 import { Category } from "@/payload-types";
 import { useState } from "react";
 import {ParsedDrinks} from "@/types/drinks";
-import ViewDrinks from "@/components/home/Menu/ViewDrinks";
+import ViewDrinks from "@/app/(frontend)/(home)/_components/Menu/ViewDrinks";
 
 interface CategoriesSelectorProps {
     categories: Category[];

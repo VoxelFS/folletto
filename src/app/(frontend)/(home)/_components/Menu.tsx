@@ -1,7 +1,7 @@
 import { getCategories } from "@/actions/getSpecificCategory";
 import Title from "@/components/ui/Title";
 import {getDrinks} from "@/actions/getDrinks";
-import CategoriesSelector from "@/components/home/Menu/CategoriesSelector";
+import CategoriesSelector from "@/app/(frontend)/(home)/_components/Menu/CategoriesSelector";
 import parseDrinks from "@/utils/parsers/parseDrinks";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
