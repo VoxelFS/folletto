@@ -2,6 +2,7 @@ import StandardLayout from "@/components/layouts/StandardLayout";
 import Header from "@/components/ui/Header";
 import Title from "@/components/ui/Title";
 import Banner from "@/components/ui/Banner";
+import LocationsDisplay from "@/app/(frontend)/location/_components/LocationsDisplay";
 
 export default function Page() {
     return (
@@ -9,7 +10,7 @@ export default function Page() {
             <Header title="Location" image="/images/location/Location_main.png" alt="Location Main"/>
             <section className="my-24">
                 <Title title="Folletto Caffè Branches"/>
-
+                <LocationsDisplay />
             </section>
             <section className="responsive-fullwidth mt-48 mb-12">
                 <Banner
