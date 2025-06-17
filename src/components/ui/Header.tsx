@@ -1,4 +1,7 @@
-import Image from "next/image";
+"use client";
+
+import {useRef} from "react";
+import {motion, useScroll, useTransform} from "framer-motion";
 
 interface HeaderProps {
     title: string;
@@ -7,28 +10,29 @@ interface HeaderProps {
 }
 
 export default function Header({ title, image, alt }: HeaderProps) {
-    return (
-        <div className="responsive-fullwidth relative w-full aspect-[12/9] md:aspect-auto">
-            {/* Mobile version: uses fill */}
-            <div className="relative w-full aspect-[12/9] md:hidden">
-                <Image
-                    src={image}
-                    alt={alt}
-                    fill
-                    className="object-cover"
-                />
-            </div>
 
-            {/* Desktop version: uses fixed height & width */}
-            <div className="hidden md:block">
-                <Image
-                    src={image}
-                    alt={alt}
-                    height={1247}
-                    width={2768}
-                    className="object-cover"
-                />
-            </div>
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"],
+    });
+
+    const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+    return (
+        <div ref={ref}
+             className="responsive-fullwidth w-full overflow-hidden relative grid place-items-center"
+             style={{
+                 height: 'clamp(600px, 80vh, 700px)'
+             }}>
+            <motion.div
+                className="absolute inset-0 z-0"
+                style={{
+                    backgroundImage: `url(${image})`,
+                    backgroundPosition: "bottom",
+                    backgroundSize: "cover", y: backgroundY }}
+            >
+            </motion.div>
 
 
             <div className="absolute inset-0 flex items-center justify-center">
