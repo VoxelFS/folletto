@@ -17,6 +17,7 @@ export default function Header({ title, image }: HeaderProps) {
     });
 
     const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
     return (
         <div ref={ref}
@@ -35,7 +36,7 @@ export default function Header({ title, image }: HeaderProps) {
 
 
             <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="translate-y-10">{title}</h1>
+                <motion.h1 className="translate-y-10" style={{ y: textY }}>{title}</motion.h1>
             </div>
         </div>
     );
