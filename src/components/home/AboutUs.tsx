@@ -14,7 +14,7 @@ export default function AboutUs() {
                 />
             </div>
 
-            <div className="pt-[200px] sm:pt-[300px] flex flex-col md:flex-row-reverse gap-x-10 gap-y-6">
+            <div className="pt-[250px] flex flex-col md:flex-row-reverse gap-x-10 gap-y-6">
                 <div className="md:w-1/2 py-2">
                     <h3 className="text-secondary-brown">About Us</h3>
                     <p className="mt-5">
