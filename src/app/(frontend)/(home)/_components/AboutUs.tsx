@@ -24,7 +24,9 @@ export default function AboutUs() {
                         create an unparalleled coffee experience customers will crave again and again.
                     </p>
                     <Button className="mt-5 text-primary-brown">
-                        More
+                        <Link href="/about">
+                            More
+                        </Link>
                     </Button>
                 </div>
 
