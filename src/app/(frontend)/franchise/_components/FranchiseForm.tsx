@@ -1,7 +1,7 @@
 "use client";
 
 import {useForm} from "react-hook-form";
-import {Franchise, franchiseSchema} from "@/lib/zod/schema";
+import {Franchise, franchiseSchema} from "@/lib/zod/schema/FranchiseSchema";
 import {zodResolver} from "@hookform/resolvers/zod";
 import FormInput from "@/components/ui/FormInput";
 import Button from "@/components/ui/Button";
@@ -48,9 +48,7 @@ export default function FranchiseForm() {
     return (
         <>
             {sent ? (
-                <div>
-                    <ThankYou />
-                </div>
+                <ThankYou />
             ) : (
                 <>
                     <section className="mt-24 flex flex-col items-center text-center">
@@ -69,58 +67,58 @@ export default function FranchiseForm() {
                                 error={errors.firstName}
                                             className="w-full"
                                         />
-                                        <FormInput
-                                            label="Last Name"
-                                            placeholder="Enter your last name"
-                                            {...register("lastName")}
-                                            error={errors.lastName}
-                                            className="w-full"
-                                        />
-                                    </div>
-                                    <FormInput
-                                        label={"Phone"}
-                                        placeholder={"Enter your phone number"}
-                                        {...register("phone", {valueAsNumber: true})}
-                                        error={errors.phone}
-                                        className="w-full"
-                                    />
-                                    <FormInput
-                                        label={"Email"}
-                                        placeholder={"Enter your email"}
-                                        {...register("email")}
-                                        error={errors.email}
-                                        className="w-full"
-                                    />
-                                    <FormInput
-                                        label={"Amount available to invest"}
-                                        placeholder={"Enter amount of money"}
-                                        {...register("amount", {valueAsNumber: true})}
-                                        error={errors.amount}
-                                        className="w-full"
-                                    />
-                                    <FormInput
-                                        label={"Preferred Franchise Location"}
-                                        placeholder={"Enter your preferred location"}
-                                        {...register("preferredLocation")}
-                                        error={errors.preferredLocation}
-                                        className="w-full"
-                                    />
-                                    <FormTextarea
-                                        label="Comments"
-                                        placeholder="Write a message"
-                                        {...register("comments")}
-                                        error={errors.comments}
-                                        className="w-full"
-                                    />
-                                    <Button>
-                                        <button
-                                            type="submit"
-                                            disabled={isSubmitting}
-                                            className="text-primary-brown hover:cursor-pointer disabled:cursor-not-allowed"
-                                        >
-                                            {isSubmitting ? "Submitting..." : "Submit"}
-                                        </button>
-                                    </Button>
+                            <FormInput
+                                label="Last Name"
+                                placeholder="Enter your last name"
+                                {...register("lastName")}
+                                error={errors.lastName}
+                                className="w-full"
+                            />
+                        </div>
+                            <FormInput
+                                label={"Phone"}
+                                placeholder={"Enter your phone number"}
+                                {...register("phone", {valueAsNumber: true})}
+                                error={errors.phone}
+                                className="w-full"
+                            />
+                            <FormInput
+                                label={"Email"}
+                                placeholder={"Enter your email"}
+                                {...register("email")}
+                                error={errors.email}
+                                className="w-full"
+                            />
+                            <FormInput
+                                label={"Amount available to invest"}
+                                placeholder={"Enter amount of money"}
+                                {...register("amount", {valueAsNumber: true})}
+                                error={errors.amount}
+                                className="w-full"
+                            />
+                            <FormInput
+                                label={"Preferred Franchise Location"}
+                                placeholder={"Enter your preferred location"}
+                                {...register("preferredLocation")}
+                                error={errors.preferredLocation}
+                                className="w-full"
+                            />
+                            <FormTextarea
+                                label="Comments"
+                                placeholder="Write a message"
+                                {...register("comments")}
+                                error={errors.comments}
+                                className="w-full"
+                            />
+                            <Button>
+                                <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="text-primary-brown hover:cursor-pointer disabled:cursor-not-allowed"
+                                >
+                                    {isSubmitting ? "Submitting..." : "Send a form"}
+                                </button>
+                            </Button>
                     </form>
                 </>
             )}
