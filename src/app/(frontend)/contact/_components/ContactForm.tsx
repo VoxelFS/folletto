@@ -47,7 +47,7 @@ export default function ContactForm() {
             {sent ? (
                 <ThankYou />
             ) : (
-                <div className="flex flex-col md:flex-row gap-x-20">
+                <div className="flex flex-col md:flex-row gap-x-15">
                     <div className="w-full">
                         <h1 className="font-black">Contact Us</h1>
                         <p className="text-subtext-black">Feel free to contact us any time. Our consultant team will get in
@@ -103,11 +103,13 @@ export default function ContactForm() {
                             </Button>
                         </form>
                     </div>
-                    <div className="w-full relative">
+                    <div
+                        className="md:block relative aspect-[4/3] w-full flex items-center justify-center">
                         <Image
                             src="/images/contact/contactus.png"
                             alt="contact us image"
                             fill
+                            className="object-contain"
                         />
                     </div>
                 </div>

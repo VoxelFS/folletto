@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     icon: "./favicon.ico",
   },
   description: "Folleto Caffè offers cutting-edge beverage automation robots at competitive prices.",
-  keywords: ["folletto", "folletto Caffè", "folletto cafe", "folletto auckland", "folletto website"],
+  keywords: ["folletto", "folletto Caffè", "folletto cafe", "folletto auckland", "folletto website", "robotic barista"],
 };
 
 export default function RootLayout({

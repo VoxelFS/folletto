@@ -13,7 +13,7 @@ export default function ThankYou() {
             />
             <h2>Thank you for contacting us!</h2>
             <p>We have received your message.</p>
-            <p>We'll reach out to you soon.</p>
+            <p>We&apos;ll reach out to you soon.</p>
             <Button className="mt-10">
                 <Link href="/" className="text-primary-brown">
                     Back to home

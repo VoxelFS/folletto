@@ -28,13 +28,14 @@ export default function AboutUs() {
                     </Button>
                 </div>
 
-                <Image
-                    src="/images/hero/coffee_about.png"
-                    alt="coffee about"
-                    width={600}
-                    height={400}
-                    className="md:w-1/2 w-auto h-auto"
-                />
+                <div className="relative aspect-[4/3] w-full md:w-1/2 flex items-center justify-center">
+                    <Image
+                        src="/images/hero/coffee_about.png"
+                        alt="coffee about"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
 
             <div className="pt-20 flex flex-col md:flex-row gap-x-10 gap-y-6">
@@ -60,14 +61,14 @@ export default function AboutUs() {
                         </Link>
                     </Button>
                 </div>
-
-                <Image
-                    src="/images/hero/folletto_group.png"
-                    alt="folletto group"
-                    width={600}
-                    height={400}
-                    className="md:w-1/2 w-full h-auto"
-                />
+                <div className="relative aspect-[4/3] w-full md:w-1/2 flex items-center justify-center">
+                    <Image
+                        src="/images/hero/folletto_group.png"
+                        alt="folletto group"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
         </div>
     );
