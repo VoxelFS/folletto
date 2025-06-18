@@ -104,7 +104,7 @@ export default function ContactForm() {
                         </form>
                     </div>
                     <div
-                        className="md:block relative aspect-[4/3] w-full flex items-center justify-center">
+                        className="hidden relative aspect-[4/3] w-full md:flex items-center justify-center">
                         <Image
                             src="/images/contact/contactus.png"
                             alt="contact us image"
