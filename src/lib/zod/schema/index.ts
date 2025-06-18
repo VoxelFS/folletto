@@ -3,8 +3,8 @@
 import { z } from "zod";
 
 export const franchiseSchema = z.object({
-    firstName: z.string(),
-    lastName: z.string(),
+    firstName: z.string().min(1, "First name is required"),
+    lastName: z.string().min(1, "Last name is required"),
     phone: z.preprocess(
         (val) => (val === '' || val === null ? NaN : Number(val)),
         z
@@ -15,7 +15,7 @@ export const franchiseSchema = z.object({
                 message: "Phone must be a valid number",
             })
     ) as z.ZodType<number>,
-    email: z.string().email(),
+    email: z.string().min(1, "Email is required").email("Invalid email"),
     amount: z.preprocess(
         (val) => (val === '' || val === null ? NaN : Number(val)),
         z
@@ -26,8 +26,8 @@ export const franchiseSchema = z.object({
                 message: "Amount must be a valid number",
             })
     ) as z.ZodType<number>,
-    preferredLocation: z.string(),
-    comments: z.string(),
+    preferredLocation: z.string().min(1, "Preferred location is required"),
+    comments: z.string().min(1, "Comments are required"),
 });
 
 export type Franchise = z.infer<typeof franchiseSchema>;
