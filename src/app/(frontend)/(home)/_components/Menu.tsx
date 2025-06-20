@@ -3,8 +3,7 @@ import Title from "@/components/ui/Title";
 import {getDrinks} from "@/actions/getDrinks";
 import CategoriesSelector from "@/app/(frontend)/(home)/_components/Menu/CategoriesSelector";
 import parseDrinks from "@/utils/parsers/parseDrinks";
-import Button from "@/components/ui/Button";
-import Link from "next/link";
+import {Button} from "@/components/ui/Button";
 
 export default async function Menu() {
 
@@ -17,10 +16,8 @@ export default async function Menu() {
 
             <CategoriesSelector categories={categories} drinks={drinks} />
 
-            <Button className="mt-7">
-                <Link href="/menu" className="text-primary-brown">
-                    See More
-                </Link>
+            <Button href="/menu" className="mt-7">
+                See More
             </Button>
         </div>
     );

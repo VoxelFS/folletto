@@ -1,6 +1,5 @@
 import Title from "@/components/ui/Title";
-import Link from "next/link";
-import Button from "@/components/ui/Button";
+import {Button} from "@/components/ui/Button";
 
 export default function Contact() {
     return (
@@ -11,10 +10,8 @@ export default function Contact() {
                 <br/>
                 Our team will be in touch with you within 48-hours.
             </p>
-            <Button className="text-primary-brown">
-                <Link href="/contact">
-                    Contact Us
-                </Link>
+            <Button href="/contact" className="text-primary-brown">
+                Contact Us
             </Button>
         </div>
     );

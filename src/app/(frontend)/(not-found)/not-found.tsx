@@ -1,7 +1,6 @@
 import StandardLayout from "@/components/layouts/StandardLayout";
-import Link from "next/link";
 import Title from "@/components/ui/Title";
-import Button from "@/components/ui/Button";
+import {Button} from "@/components/ui/Button";
 
 export default function NotFoundPage() {
     return (
@@ -15,13 +14,8 @@ export default function NotFoundPage() {
                         </p>
                         <Title title={"That page is not around today :("} />
                     </div>
-                    <Button>
-                        <Link
-                            href="/"
-                            className="text-primary-brown"
-                        >
-                            Back to home
-                        </Link>
+                    <Button href="/">
+                        Back to home
                     </Button>
                 </div>
             </div>

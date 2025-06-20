@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Button from "@/components/ui/Button";
-import Link from "next/link";
+import {Button} from "@/components/ui/Button";
 
 export default function AboutUs() {
     return (
@@ -17,16 +16,14 @@ export default function AboutUs() {
             <div className="pt-[250px] flex flex-col md:flex-row-reverse gap-x-10 gap-y-6">
                 <div className="md:w-1/2 py-2">
                     <h3 className="text-secondary-brown">About Us</h3>
-                    <p className="mt-5">
+                    <p className="mt-5 mb-10" >
                         At Folletto Caffè, we offer cutting-edge beverage automation robots at competitive prices,
                         delivering superior taste and lightning-fast beverage preparation.
                         Our robots redefine beverage service standards, surpassing traditional robotic baristas to
                         create an unparalleled coffee experience customers will crave again and again.
                     </p>
-                    <Button className="mt-5 text-primary-brown">
-                        <Link href="/about">
-                            More
-                        </Link>
+                    <Button href="/about">
+                        More
                     </Button>
                 </div>
 
@@ -49,7 +46,7 @@ export default function AboutUs() {
                         and the United States.
                     </p>
                     <br/>
-                    <p>
+                    <p className="mb-10">
                         Want to take a sip of the future?
 
                         <br/>Make sure to swing by our robotic coffee points!
@@ -57,10 +54,8 @@ export default function AboutUs() {
                         <br/>Find us at the following.
                     </p>
 
-                    <Button className="mt-5 text-primary-brown">
-                        <Link href="/location">
-                            See Locations
-                        </Link>
+                    <Button href="/location">
+                        See Location
                     </Button>
                 </div>
                 <div className="relative aspect-[4/3] w-full md:w-1/2 flex items-center justify-center">

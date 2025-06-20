@@ -6,7 +6,7 @@ import {zodResolver} from "@hookform/resolvers/zod";
 import {Contact, contactFormSchema} from "@/lib/zod/schema/ContactSchema";
 import FormInput from "@/components/ui/FormInput";
 import FormTextarea from "@/components/ui/FormTextArea";
-import Button from "@/components/ui/Button";
+import {Button} from "@/components/ui/Button";
 import Image from "next/image";
 import ThankYou from "@/components/ThankYou";
 
@@ -92,14 +92,8 @@ export default function ContactForm() {
                                 error={errors.comments}
                                 className="w-full"
                             />
-                            <Button>
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full h-full text-primary-brown hover:cursor-pointer disabled:cursor-not-allowed"
-                                >
-                                    {isSubmitting ? "Submitting..." : "Send a message"}
-                                </button>
+                            <Button type="submit" disabled={isSubmitting} >
+                                {isSubmitting ? "Submitting..." : "Send a message"}
                             </Button>
                         </form>
                     </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import Button from "@/components/ui/Button";
+import {Button} from "@/components/ui/Button";
 
 export default function ThankYou() {
     return (
@@ -13,11 +12,9 @@ export default function ThankYou() {
             />
             <h2>Thank you for contacting us!</h2>
             <p>We have received your message.</p>
-            <p>We&apos;ll reach out to you soon.</p>
-            <Button className="mt-10">
-                <Link href="/" className="text-primary-brown">
-                    Back to home
-                </Link>
+            <p className="mb-10">We&apos;ll reach out to you soon.</p>
+            <Button href="/" >
+                Back to home
             </Button>
         </div>
     );

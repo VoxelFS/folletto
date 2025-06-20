@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Button from "@/components/ui/Button";
-import Link from "next/link";
+import {Button} from "@/components/ui/Button";
 
 interface BannerProps {
     title: string;
@@ -31,10 +30,8 @@ export default function Banner({ title, description, link, href, img, alt }: Ban
                     </p>
                 </div>
             </div>
-            <Button className="hover:bg-primary-brown text-primary-brown hover:text-black z-5">
-                <Link href={href}>
-                    {link}
-                </Link>
+            <Button href={href} variant="dark">
+                {link}
             </Button>
         </div>
     );

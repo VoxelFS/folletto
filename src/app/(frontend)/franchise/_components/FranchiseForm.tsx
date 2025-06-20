@@ -4,7 +4,7 @@ import {useForm} from "react-hook-form";
 import {Franchise, franchiseSchema} from "@/lib/zod/schema/FranchiseSchema";
 import {zodResolver} from "@hookform/resolvers/zod";
 import FormInput from "@/components/ui/FormInput";
-import Button from "@/components/ui/Button";
+import {Button} from "@/components/ui/Button";
 import FormTextarea from "@/components/ui/FormTextArea";
 import {useState} from "react";
 import ThankYou from "@/components/ThankYou";
@@ -48,7 +48,9 @@ export default function FranchiseForm() {
     return (
         <>
             {sent ? (
-                <ThankYou />
+                <div className="my-24">
+                    <ThankYou />
+                </div>
             ) : (
                 <>
                     <section className="mt-24 flex flex-col items-center text-center">
@@ -110,14 +112,8 @@ export default function FranchiseForm() {
                                 error={errors.comments}
                                 className="w-full"
                             />
-                            <Button>
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="text-primary-brown hover:cursor-pointer disabled:cursor-not-allowed"
-                                >
-                                    {isSubmitting ? "Submitting..." : "Send a form"}
-                                </button>
+                            <Button type="submit" disabled={isSubmitting} >
+                                {isSubmitting ? "Submitting..." : "Send a form"}
                             </Button>
                     </form>
                 </>
