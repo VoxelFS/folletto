@@ -30,7 +30,8 @@ const Drinks: CollectionConfig = {
             name: "drinkCategory",
             label: "Drink Category",
             type: "relationship",
-            relationTo: "categories"
+            relationTo: "categories",
+            required: true
         },
     ]
 };
